@@ -1,0 +1,215 @@
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Conteneur principal */
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+/* En-têtes */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: #34495e;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #e1e1e1;
+}
+
+/* Formulaires et entrées */
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="file"] {
+    border: none;
+    padding: 10px 0;
+}
+
+/* Boutons */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.remove-button {
+    background-color: #e74c3c;
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+.remove-button:hover {
+    background-color: #c0392b;
+}
+
+/* Liste d'URLs */
+#url-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+#url-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+/* Conteneur de résultats */
+.result-card {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.url-title {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+/* Barres de progression */
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5px 0 15px 0;
+}
+
+.progress {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.metric {
+    margin-bottom: 15px;
+}
+
+.metric label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Détails des problèmes */
+.issues-details {
+    margin-top: 15px;
+}
+
+.issues-details summary {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.issues-list {
+    padding-left: 20px;
+}
+
+.issues-list li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+/* Messages d'erreur */
+.error-message {
+    background-color: #fff3f3;
+    border: 1px solid #ffcdd2;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 10px 0;
+    color: #d32f2f;
+}
+
+.error-message details {
+    margin-top: 10px;
+}
+
+.error-message pre {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* Loading spinner */
+.loading {
+    text-align: center;
+    padding: 20px;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
